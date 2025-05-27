@@ -30,26 +30,26 @@ $ bash scripts/train/train_scene_crossover.sh
 > The scene retrieval pipeline uses the trained weights from instance retrieval pipeline (for object feature calculation), please ensure to update `task:UnifiedTrain:object_enc_ckpt` in the config file when training.
 
 #### Checkpoint Inventory
-We provide all available checkpoints on G-Drive [here](https://drive.google.com/drive/folders/1iGhLQY86RTfc87qArOvUtXAhpbFSFq6w?usp=sharing). Detailed descriptions in the table below:
+We provide all available checkpoints on huggingface 👉 [here](https://huggingface.co/gradient-spaces/CrossOver/tree/main). Detailed descriptions in the table below:
 
 ##### ```instance_baseline```
 | Description            | Checkpoint Link |
 | ------------------ | -------------- |
-|Instance Baseline trained on 3RScan        | [3RScan](https://drive.google.com/drive/folders/1X_gHGLM-MssNrFu8vIMzt1sUtD3qM0ub?usp=sharing) |
-|Instance Baseline trained on ScanNet        | [ScanNet](https://drive.google.com/drive/folders/1iNWVK-r89vOIkr3GR-XfI1rItrZ0EECJ?usp=sharing) |
-|Instance Baseline trained on ScanNet + 3RScan        | [ScanNet+3RScan](https://drive.google.com/drive/folders/1gRjrYmo4lxbLHGLBnYojB5aXM6iPf4D5?usp=sharing) |
+|Instance Baseline trained on 3RScan        | [3RScan](https://huggingface.co/gradient-spaces/CrossOver/tree/main/instance_baseline_scan3r.pth) |
+|Instance Baseline trained on ScanNet        | [ScanNet](https://huggingface.co/gradient-spaces/CrossOver/tree/main/instance_baseline_scannet.pth) |
+|Instance Baseline trained on ScanNet + 3RScan        | [ScanNet+3RScan](https://huggingface.co/gradient-spaces/CrossOver/tree/main/instance_baseline_scannet%2Bscan3r.pth) |
 
 ##### ```instance_crossover```
 | Description            | Checkpoint Link |
 | ------------------ | -------------- |
-|Instance CrossOver trained on 3RScan        | [3RScan](https://drive.google.com/drive/folders/1oPwYpn4yLExxcoLOqpoLJVTfWJPGvrTc?usp=sharing) |
-|Instance CrossOver trained on ScanNet        | [ScanNet](https://drive.google.com/drive/folders/1iIwjxKD8fBGo4eINBle78liCyLT8dK8y?usp=sharing) |
-|Instance CrossOver trained on ScanNet + 3RScan        | [ScanNet+3RScan](https://drive.google.com/drive/folders/1B_DqBY47SDQ5YmjDFAyHu59Oi7RzY3w5?usp=sharing) |
+|Instance CrossOver trained on 3RScan        | [3RScan](https://huggingface.co/gradient-spaces/CrossOver/tree/main/instance_crossover_scan3r.pth) |
+|Instance CrossOver trained on ScanNet        | [ScanNet](https://huggingface.co/gradient-spaces/CrossOver/tree/main/instance_crossover_scannet.pth) |
+|Instance CrossOver trained on ScanNet + 3RScan        | [ScanNet+3RScan](https://huggingface.co/gradient-spaces/CrossOver/tree/main/instance_crossover_scannet%2Bscan3r.pth) |
 
 ##### ```scene_crossover```
 | Description            | Checkpoint Link |
 | ------------------ | -------------- |
-| Unified CrossOver trained on ScanNet + 3RScan        | [ScanNet+3RScan](https://drive.google.com/drive/folders/15JzFnKNc0SMQbxirTmEJ7KXoWE6dT9Y6?usp=sharing) |
+| Unified CrossOver trained on ScanNet + 3RScan        | [ScanNet+3RScan](https://huggingface.co/gradient-spaces/CrossOver/tree/main/scene_crossover_scannet%2Bscan3r.pth) |
 
 
 # :shield: Single Inference

@@ -19,6 +19,7 @@
 
  [![arXiv](https://img.shields.io/badge/arXiv-blue?logo=arxiv&color=%23B31B1B)](https://arxiv.org/abs/2502.15011) 
  [![ProjectPage](https://img.shields.io/badge/Project_Page-CrossOver-blue)](https://sayands.github.io/crossover)
+ [![Hugging Face (LCM) Space](https://img.shields.io/badge/🤗%20Hugging%20Face%20-Space-yellow)](https://huggingface.co/gradient-spaces/CrossOver)
  [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
  <div align="center"></div>
 </p>
@@ -68,7 +69,8 @@ assume complete data availability across all modalities. We present **CrossOver*
 
 # :newspaper: News
 > 📡 Stay tuned for stronger checkpoint release trained on many more datasets!
-- ![](https://img.shields.io/badge/New!-8A2BE2) [2025-03] CrossOver is accepted to **CVPR 2025** as **Highlight**. 🔥
+- ![](https://img.shields.io/badge/New!-8A2BE2) [2025-05] Pretrained checkpoints have been moved to HuggingFace 👉 [here](https://huggingface.co/gradient-spaces/CrossOver/tree/main).
+- [2025-03] CrossOver is accepted to **CVPR 2025** as **Highlight**. 🔥
 - [2025-02] We release CrossOver on arXiv with codebase + pre-trained checkpoints. Checkout our [paper](https://arxiv.org/abs/2502.15011) and [website](https://sayands.github.io/crossover/).
 
 # :hammer_and_wrench: Installation
@@ -145,26 +147,26 @@ For embedding and pre-trained model download, refer to [generated embedding data
 See [TRAIN.md](TRAIN.md) for the inventory of available checkpoints and detailed instructions on training and inference/evaluation with pre-trained checkpoints. The checkpoint inventory is listed below:
 
 #### Checkpoints
-We provide all available checkpoints on G-Drive [here](https://drive.google.com/drive/folders/1iGhLQY86RTfc87qArOvUtXAhpbFSFq6w?usp=sharing). Detailed descriptions in the table below:
+We provide all available checkpoints on huggingface 👉 [here](https://huggingface.co/gradient-spaces/CrossOver/tree/main). Detailed descriptions in the table below:
 
 ##### ```instance_baseline```
 | Description            | Checkpoint Link |
 | ------------------ | -------------- |
-|Instance Baseline trained on 3RScan        | [3RScan](https://drive.google.com/drive/folders/1X_gHGLM-MssNrFu8vIMzt1sUtD3qM0ub?usp=sharing) |
-|Instance Baseline trained on ScanNet        | [ScanNet](https://drive.google.com/drive/folders/1iNWVK-r89vOIkr3GR-XfI1rItrZ0EECJ?usp=sharing) |
-|Instance Baseline trained on ScanNet + 3RScan        | [ScanNet+3RScan](https://drive.google.com/drive/folders/1gRjrYmo4lxbLHGLBnYojB5aXM6iPf4D5?usp=sharing) |
+|Instance Baseline trained on 3RScan        | [3RScan](https://huggingface.co/gradient-spaces/CrossOver/tree/main/instance_baseline_scan3r.pth) |
+|Instance Baseline trained on ScanNet        | [ScanNet](https://huggingface.co/gradient-spaces/CrossOver/tree/main/instance_baseline_scannet.pth) |
+|Instance Baseline trained on ScanNet + 3RScan        | [ScanNet+3RScan](https://huggingface.co/gradient-spaces/CrossOver/tree/main/instance_baseline_scannet%2Bscan3r.pth) |
 
 ##### ```instance_crossover```
 | Description            | Checkpoint Link |
 | ------------------ | -------------- |
-|Instance CrossOver trained on 3RScan        | [3RScan](https://drive.google.com/drive/folders/1oPwYpn4yLExxcoLOqpoLJVTfWJPGvrTc?usp=sharing) |
-|Instance CrossOver trained on ScanNet        | [ScanNet](https://drive.google.com/drive/folders/1iIwjxKD8fBGo4eINBle78liCyLT8dK8y?usp=sharing) |
-|Instance CrossOver trained on ScanNet + 3RScan        | [ScanNet+3RScan](https://drive.google.com/drive/folders/1B_DqBY47SDQ5YmjDFAyHu59Oi7RzY3w5?usp=sharing) |
+|Instance CrossOver trained on 3RScan        | [3RScan](https://huggingface.co/gradient-spaces/CrossOver/tree/main/instance_crossover_scan3r.pth) |
+|Instance CrossOver trained on ScanNet        | [ScanNet](https://huggingface.co/gradient-spaces/CrossOver/tree/main/instance_crossover_scannet.pth) |
+|Instance CrossOver trained on ScanNet + 3RScan        | [ScanNet+3RScan](https://huggingface.co/gradient-spaces/CrossOver/tree/main/instance_crossover_scannet%2Bscan3r.pth) |
 
 ##### ```scene_crossover```
 | Description            | Checkpoint Link |
 | ------------------ | -------------- |
-| Unified CrossOver trained on ScanNet + 3RScan        | [ScanNet+3RScan](https://drive.google.com/drive/folders/15JzFnKNc0SMQbxirTmEJ7KXoWE6dT9Y6?usp=sharing) |
+| Unified CrossOver trained on ScanNet + 3RScan        | [ScanNet+3RScan](https://huggingface.co/gradient-spaces/CrossOver/tree/main/scene_crossover_scannet%2Bscan3r.pth) |
 
 
 ## 🚧 TODO List
