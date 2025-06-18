@@ -71,10 +71,10 @@ The script will output embeddings in the same format as provided [here](DATA.md/
 
 # :bar_chart: Evaluation
 #### Cross-Modal Object Retrieval
-Run the following script (refer to the script to run instance baseline/instance crossover) for objects instance + scene retrieval results using the instance-based methods. Detailed usage inside the script.
+Run the following script (refer to the script to run instance baseline/instance crossover) for object instance + scene retrieval results using the instance-based methods. Detailed usage inside the script.
 
 ```bash
-$ bash scripts/evaluation/eval_instance_retrieval.sh
+$ bash scripts/evaluation/eval_object_retrieval.sh
 ```
 
 > Running this script for 3RScan dataset will also show point-to-point temporal instance matching results on the RIO category subset.
@@ -83,5 +83,5 @@ $ bash scripts/evaluation/eval_instance_retrieval.sh
 Run the following script (for scene crossover). Detailed usage inside the script.
 
 ```bash
-$ bash scripts/evaluation/eval_instance_retrieval.sh
+$ bash scripts/evaluation/eval_scene_retrieval.sh
 ```
