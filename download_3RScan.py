@@ -94,10 +94,8 @@ def main():
     parser.add_argument('--type', help='specific file type to download')
     args = parser.parse_args()
 
-    print('By pressing any key to continue you confirm that you have agreed to the 3RScan terms of use as described at:')
-    print(TOS_URL)
-    print('***')
-    print('Press any key to continue, or CTRL-C to exit.')
+    # 自动同意条款，不显示确认提示
+    print(f'自动同意3RScan使用条款，条款链接：{TOS_URL}')
 
     release_scans = get_scans(BASE_URL + RELEASE)
     test_scans = get_scans(BASE_URL + HIDDEN_RELEASE)
@@ -135,9 +133,7 @@ def main():
         else:
             print('WARNING: You are downloading all 3RScan scans of type ' + file_types[0])
         print('Note that existing scan directories will be skipped. Delete partially downloaded directories to re-download.')
-        print('***')
-        print('Press any key to continue, or CTRL-C to exit.')
-        key = input('')
+        # 自动继续，不要求用户确认
         download_release(release_scans, args.out_dir, file_types)
         download_release(test_scans, args.out_dir, file_types_test)
 
